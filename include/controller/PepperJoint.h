@@ -1,0 +1,11 @@
+#ifndef PEPPER_JOINT_H
+#define PEPPER_JOINT_H
+
+namespace var
+{
+   //Enumerado con las articulaciones del robot
+   enum PepperJoint {HEAD_YAW = 0, HEAD_PITCH, L_SHOULDER_PITCH, L_SHOULDER_ROLL, L_ELBOW_YAW, L_ELBOW_ROLL, L_WRIST_YAW, L_HAND,
+   HIP_ROLL, HIP_PITCH, KNEE_PITCH, R_SHOULDER_PITCH, R_SHOULDER_ROLL, R_ELBOW_YAW, R_ELBOW_ROLL, R_WRIST_YAW, R_HAND};
+}
+
+#endif
