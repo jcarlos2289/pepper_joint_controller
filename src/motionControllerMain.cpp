@@ -3,6 +3,7 @@
 #include <string>
 #include "MotionControllerFactory.h"
 #include "MoveGenerator.h"
+#include "PepperJoint.h"
 
 //Controlador de movimiento
 var::MotionController *controller;
@@ -39,7 +40,7 @@ int main(int argc, char** argv)
 	var::MotionControllerFactory factory;
 	controller = factory.generate(type, nh);
 	mvGen = new var::MoveGenerator(nh);
-	mvGen->moveJoint()
+	mvGen->moveJoint();
 	
 	//Comprobar si se ha generado
 	if(controller == NULL)
